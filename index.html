@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Taxes in British Columbia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="all">
+<div class="header">
+<h1>Sales Taxes in British Columbia</h1>
+<h3>British Columbia is one of the provinces in Canada that charges separate 7% Provincial Sales Tax (PST) and 5% federal Goods and Services Tax (GST). </h3>
+<h3>Most goods and services are charged both taxes, with a number of exceptions.</h3>
+</div>
+
+
+<div class="container">
+    <div class="inputField">
+<p class="amount">Amount before taxes</p>
+<input id="amountBeforeTax" type="number" step="1"  placeholder="$"> 
+
+<select id="tax">
+    <option value="0.05">GST (5%)</option>
+    <option value="0.07">PST (7%)</option>
+    <option value="0.10">PST (10%) Alcohol</option>
+    <option value="0.12" selected>Sales Taxes (12%)</option>
+</select>
+</div>
+
+<div class="btnCalculate">
+<button id="btn">Calculate</button>
+</div>
+
+<div class="total">
+    <div>
+        <p class="amount">Total After Taxes</p>
+    <span>$</span>
+    <span id="amountAfterTax"> </span>
+</div>
+    <div>
+    <p class="amount">Total Taxes</p>
+    <span>$</span>
+    <span id="amountTax"> </span>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+<div class="pst">
+    <div class="accordion">
+<h3>BC Rebates and Exemptions to the PST </h3>
+<!-- <img src="1.png" alt="Open" width="30px" height="30px"> -->
+</div>
+
+<div class="panel">
+<p>There are categories of goods and services that are not charged PST. These rebates and exemptions are separate from the ones granted on a national level.
+<ul>
+    <h4>These categories include:</h4>
+<li>All food, including basic groceries and prepared foods.</li>
+<li>Books, newspapers, and magazines</li>
+<li>Children’s clothing, footwear, and car seats and booster seats</li>
+<li>Bicycles</li>
+<li>Prescription medications, household medical aids, and many health and medical products.</li>
+<li>Pet services (e.g. veterinarian)</li>
+</ul> </p>
+</div>
+</div>
+
+<div  class="pst">
+
+
+    <div class="accordion">
+<h3>BC Rebates and Exemptions to the GST</h3>
+</div>
+
+
+<div class="panel">
+<p>There are two types of exemptions for GST: direct exemptions and zero-rated goods and services. The difference is related to how businesses handle costs related to the exemptions, but as a consumer, you would not have to pay GST on items from either category.</p>
+
+<ul><h4>Goods and services that are zero-rated from GST include:</h4>
+    <li>Basic groceries, including meats, fish, cereals, dairy products, eggs, vegetables, coffee, tea. Some foods including snack foods, liquor, and carbonated beverages are charged HST.</li>
+    <li>Prescription drugs, but not any drugs available over-the-counter (OTC).</li>
+    <li>Medical devices</li>
+    <li>Feminine hygiene products</li>
+</ul>
+
+<ul><h4>Goods and services that are directly exempt from GST include:</h4>
+    <li>Rental accommodations of longer than a month</li>
+    <li>Educational services that lead to a certificate or diploma or are required for a certain practice</li>
+    <li>Medical and dental services</li>
+    <li>Financial services such as bank fees</li>
+    <li>Legal aid services</li>
+    <li>Day-care services</li>
+</ul>
+</div>
+</div>
+</div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
